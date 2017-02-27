@@ -23,5 +23,7 @@ test(() => {
 
 test(() => {
     let adder = new Adder(3, 5);
+
+    // This test should fail.
     assertEquals(7, adder.add());
 });

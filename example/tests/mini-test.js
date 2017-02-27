@@ -24,9 +24,8 @@ function runAll(directory) {
         .filter(p => p !== __filename)
         .map(p => path.join(directory, p));
 
-    let items = paths.map(i => [i, fs.statSync(i)]);
-    items.forEach(i => {
-        let [p, stat] = i;
+    paths.forEach(p => {
+        let stat = fs.statSync(p);
         if (stat.isDirectory()) {
             runAll(p);
         } else if (stat.isFile()) {
@@ -35,9 +34,5 @@ function runAll(directory) {
     })
 }
 
-function printSummary() {
-    console.log(`\n${summary[0]} tests passed, ${summary[1]} tests failed.`);
-}
-
 runAll(__dirname);
-printSummary();
+console.log(`\n${summary[0]} tests passed, ${summary[1]} tests failed.`);
