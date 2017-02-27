@@ -11,7 +11,7 @@ A minimalist's js testing framework (only 38 sloc).
 	test(() => {
 		let adder = new Adder(3, 5);
 		assertEquals(8, adder.add());
-	});
+	}, 'Add result test');
 ```
 
 ### License

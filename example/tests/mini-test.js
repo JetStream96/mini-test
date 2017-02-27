@@ -3,13 +3,13 @@ const path = require('path');
 
 const summary = [0, 0];
 
-exports.test = function(action) {
+exports.test = function(action, name = '') {
     try {
         action();
         summary[0]++;
     } catch (err) {
         summary[1]++;
-        console.log('Test fails: ' + err.stack);
+        console.log((name ? `Test [${name}]` : 'A test') + ' failed: ' + err.stack);
     }
 }
 
@@ -35,4 +35,4 @@ function runAll(directory) {
 }
 
 runAll(__dirname);
-console.log(`\n${summary[0]} tests passed, ${summary[1]} tests failed.`);
+console.log(`\n${summary[0]} test(s) passed, ${summary[1]} test(s) failed.`);
