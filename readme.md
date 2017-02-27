@@ -1,5 +1,5 @@
 # mini-test
-A minimalist's js testing framework and test runner, all in 38 lines of code.
+A minimalist's Node.js testing framework and test runner, all in 38 lines of code.
 
 ### Usage
 ```js
@@ -20,7 +20,7 @@ In command line, go to ```example/tests``` and type
     node mini-test
 ```
 
-All tests ```example/tests``` will run and a summary along with failed tests will show.
+All tests in ```example/tests``` will run. A summary along with details of failed tests will show.
 
 ### License
 Public domain.
