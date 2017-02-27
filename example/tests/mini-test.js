@@ -15,7 +15,7 @@ exports.test = function(action) {
 
 exports.assertEquals = function(expected, actual) {
     if (expected !== actual) {
-        throw new Error(`Assertion error: expected ${expected}, but is ${actual}`);
+        throw new Error(`Assertion error: expected ${expected}, but is ${actual}.`);
     }
 };
 

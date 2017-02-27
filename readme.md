@@ -1,5 +1,5 @@
 # mini-test
-A minimalist's testing framework.
+A minimalist's js testing framework (only 43 sloc).
 
 ### Usage
 ```js
