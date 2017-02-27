@@ -1,5 +1,5 @@
-const Math = require('../math');
-const Adder = Math.Adder;
+const math = require('../math');
+const Adder = math.Adder;
 
 // Import the test framework.
 const miniTest = require('./mini-test');
