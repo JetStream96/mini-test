@@ -9,12 +9,12 @@ const [test, assertEquals] = [miniTest.test, miniTest.assertEquals];
 test(() => {
     let adder = new Adder(3, 5);
     assertEquals(true, adder.inputsAreValid);
-});
+}, 'Valid inputs');
 
 test(() => {
     let adder = new Adder(3, "5");
     assertEquals(false, adder.inputsAreValid);
-});
+}, 'Invalid inputs');
 
 test(() => {
     let adder = new Adder(3, 5);

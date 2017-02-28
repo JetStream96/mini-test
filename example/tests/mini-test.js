@@ -2,14 +2,14 @@ const fs = require('fs');
 const path = require('path');
 
 const summary = [0, 0];
-
+let fileName = '';
 exports.test = function(action, name = '') {
     try {
         action();
         summary[0]++;
     } catch (err) {
         summary[1]++;
-        console.log((name ? `Test [${name}]` : 'A test') + ' failed: ' + err.stack);
+        console.log(`Test [${name}] failed: ` + err.message + `\n(${fileName})\n`);
     }
 }
 
@@ -29,6 +29,7 @@ function runAll(directory) {
         if (stat.isDirectory()) {
             runAll(p);
         } else if (stat.isFile()) {
+            fileName = p;
             require(p);
         }
     });
