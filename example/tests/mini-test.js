@@ -3,7 +3,7 @@ const path = require('path');
 
 const summary = [0, 0];
 let fileName = '';
-exports.test = function(action, name = '') {
+exports.test = function(action, name) {
     try {
         action();
         summary[0]++;

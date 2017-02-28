@@ -1,5 +1,5 @@
 # mini-test
-A minimalist's Node.js testing framework and test runner, all in 38 lines of code.
+A minimalist's Node.js testing framework and test runner, all in 39 lines of code.
 
 ### Usage
 ```js
