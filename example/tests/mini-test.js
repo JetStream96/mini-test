@@ -31,7 +31,7 @@ function runAll(directory) {
         } else if (stat.isFile()) {
             require(p);
         }
-    })
+    });
 }
 
 runAll(__dirname);
