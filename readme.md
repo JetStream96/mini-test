@@ -4,14 +4,14 @@ A minimalist's Node.js testing framework and test runner, all in 39 lines of cod
 ### Usage
 ```js
     // Import the test framework.
-    const miniTest = require('./mini-test');
-    const [test, assertEquals] = [miniTest.test, miniTest.assertEquals];
+    const miniTest = require('./mini-test')
+    const [test, assertEquals] = [miniTest.test, miniTest.assertEquals]
 
     // Write test cases.
     test(() => {
-        let adder = new Adder(3, 5);
-        assertEquals(8, adder.add());
-    }, 'Add result test');
+        let adder = new Adder(3, 5)
+        assertEquals(8, adder.add())
+    }, 'Add result test')
 ```
 
 In command line, go to ```example/tests``` and type
