@@ -1,0 +1,27 @@
+{
+  "name": "mini-test.js",
+  "version": "1.0.3",
+  "description": "A minimalist's Node.js testing framework and test runner.",
+  "main": "mini-test.js",
+  "scripts": {
+    "test": "node mini-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JetStream96/mini-test.git"
+  },
+  "keywords": [
+    "test",
+    "testing",
+    "minimalist"
+  ],
+  "author": "David Chen <davidchen9568@gmail.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/JetStream96/mini-test/issues"
+  },
+  "homepage": "https://github.com/JetStream96/mini-test#readme",
+  "files": [
+    "mini-test.js"
+  ]
+}

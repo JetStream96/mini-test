@@ -22,5 +22,7 @@ In command line, go to ```example/tests``` and type
 
 All tests in ```example/tests``` will run. A summary along with details of failed tests will show.
 
+This repo contains a complete example. In practice, only mini-test.js is required.
+
 ### License
 Public domain.
