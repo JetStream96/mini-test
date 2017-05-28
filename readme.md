@@ -26,7 +26,7 @@ All tests in ```example/tests``` will run. A summary along with details of faile
     (c:\Data\Programming\Projects\mini-test.js\example\tests\adder-test.js)
 
 
-    3 test(s) passed, 1 test(s) failed.
+    4 test(s) passed, 1 test(s) failed.
 ```
 
 You can also run all tests in a single file. ```node adder-test``` produces the following output:
@@ -34,7 +34,7 @@ You can also run all tests in a single file. ```node adder-test``` produces the 
     Test [Add result test (should fail)] failed: Assertion error: expected 7, but is 8.
 ```
 
-This repo contains a complete example. In practice, only ```mini-test.js``` and ```test-runner.js``` is required.
+This repo contains a complete example. In practice, only ```mini-test.js``` and ```test-runner.js``` are required.
 
 ### License
 Public domain.

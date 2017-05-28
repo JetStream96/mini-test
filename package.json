@@ -1,6 +1,6 @@
 {
   "name": "mini-test.js",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "A minimalist's Node.js testing framework and test runner.",
   "main": "mini-test.js",
   "scripts": {
